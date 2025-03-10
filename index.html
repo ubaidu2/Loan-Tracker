@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Loan Tracker</h1>
+    <form id="loanForm">
+        <input type="text" id="name" placeholder="Customer Name" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="product" placeholder="Product Bought" required>
+        <input type="number" id="amount" placeholder="Loan Amount" required>
+        <button type="submit">Add Loan</button>
+    </form>
+    <h2>Loan Records</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Product</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="loanList"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
+
